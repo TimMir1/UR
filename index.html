@@ -80,20 +80,27 @@
     .social {
       margin-bottom: 20px;
       font-size: 1.1em;
+      text-align: center; /* Центрируем содержимое блока social */
     }
     .social a {
-      display: inline-block;
+      display: inline-block; /* Делаем ссылку блочно-строчной */
       margin: 8px 0;
       color: #333333;
       text-decoration: none;
       font-weight: bold;
+      vertical-align: top; /* Выравнивание по верху для центрирования текста */
     }
     .social img {
-      vertical-align: middle;
-      height: 28px; /* Reduced size */
+      /* Уменьшаем размер логотипа YouTube в 2 раза */
+      height: 14px; /* Было 28px, стало 14px */
+      width: auto; /* Автоматическая ширина для сохранения пропорций */
+      display: block; /* Делаем изображение блочным для размещения текста под ним */
+      margin: 0 auto 5px auto; /* Центрируем изображение и добавляем отступ снизу */
     }
     .social .youtube-text {
       color: #2c5364; /* Blue color for text */
+      display: block; /* Делаем текст блочным для размещения под изображением */
+      font-size: 0.9em; /* Немного уменьшаем размер текста, если нужно */
     }
     footer {
       background: #2c5364;
@@ -177,7 +184,7 @@
         margin: 5px 0; /* Уменьшаем отступы для социальных ссылок */
       }
       .social img {
-        height: 24px; /* Уменьшаем размер иконок соцсетей */
+        height: 12px; /* Уменьшаем размер иконок соцсетей еще для мобильных */
       }
       .messengers img {
         width: 24px;
